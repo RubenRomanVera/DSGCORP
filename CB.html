@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Filas y Columnas</title>
+</head>
+<body>
+    <h1>Boton y Matriz</h1>
+    <script>
+        var i, j;
+        var n = Number(prompt("Introduce el numero que generaran filas y columnas: "));
+        var res = n * n;
+        document.write("<table border>");
+        for (i = 0; i < n;i++) {
+            document.write("<tr>");
+            for (j = 0; j < n; j++) {
+                document.write("<td>");
+                document.write(res);
+                res--;
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
